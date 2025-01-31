@@ -24,5 +24,11 @@ public class Maths {
 	return a+b;
   
 	}
+  
+  private int subtracttwonumbers(int a, int b)
+  {
+	return a-b;
+  
+	}
 
 }
