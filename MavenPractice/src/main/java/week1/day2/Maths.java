@@ -42,4 +42,11 @@ public class Maths {
   
 	}
 
+
+  private int cube (int a, int b)
+  {
+	return a*b^3*3;
+  
+	}
+
 }
