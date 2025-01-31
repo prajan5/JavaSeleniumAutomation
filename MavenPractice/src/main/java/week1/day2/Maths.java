@@ -30,5 +30,12 @@ public class Maths {
 	return a-b;
   
 	}
+  
+  private int square (int a, int b)
+  {
+	return a*b*2;
+  
+	}
+  
 
 }
