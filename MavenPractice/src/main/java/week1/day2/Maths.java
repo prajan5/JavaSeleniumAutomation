@@ -36,6 +36,10 @@ public class Maths {
 	return a*b*2;
   
 	}
+  private int power (int a, int b)
+  {
+	return a*b^3;
   
+	}
 
 }
