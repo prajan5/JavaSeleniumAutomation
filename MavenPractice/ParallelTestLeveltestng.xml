@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite" thread-count="5">
+  <test thread-count="5" parallel="classes" name="smoke">
+    <classes>
+      <class name="testNGLearning.MergeLead2"/>
+      <class name="testNGLearning.MergeLead"/>
+         </classes>
+  </test> <!-- Test -->
+  
+    <test name="sanity">
+      <classes>
+      <class name="testNGLearning.CreateLead2"/>
+      <class name="testNGLearning.CreateLead"/>
+      </classes>
+    </test> <!-- Test -->
+    
+  <test name="reg">
+     <classes>  
+      <class name="testNGLearning.EditLead2"/>
+      <class name="testNGLearning.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

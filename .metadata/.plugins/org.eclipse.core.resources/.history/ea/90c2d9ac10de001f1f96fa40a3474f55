@@ -1,0 +1,31 @@
+package extentReport;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+public class LearnExtentReport {
+
+	public static void main(String[] args) {
+		//set path for the report
+		ExtentHtmlReporter er = new ExtentHtmlReporter("./reports/result.html");
+		//Create Object for Extent report
+		ExtentReports  ers = new ExtentReports();
+		//connect step 1 and step2
+		ers.attachReporter(er);
+		//create test case details (testname, testcase description)
+		ExtentTest test = ers.createTest("LoginPage", "LeaftapsApplicaiton");
+		test.assignAuthor("Priya Rajan");
+		test.assignCategory("Smoke");
+		//set test step level status
+		test.pass("Enter User Name");
+		test.pass("Enter Password");
+		test.pass("Click on login button");
+		//close
+		ers.flush();
+		System.out.println("done");
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package exceptionHandling;
+
+public class ExceptonHandling {
+
+	public static void main(String[] args) {
+		int value[] = {3,6,8,4,9};
+		System.out.println(value[6]);
+		System.out.println("Program is successful");
+
+	}
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [MultipleTC]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" parallel="classes" name="chrome(failed)">
+    <parameter name="password" value="crmsfa"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="DemoSalesManager"/>
+    <classes>
+      <class name="excelIntegrationMultipleTC.EditLead">
+        <methods>
+          <include name="Edit_lead"/>
+          <include name="precondition"/>
+          <include name="setValues"/>
+          <include name="postcondition"/>
+        </methods>
+      </class> <!-- excelIntegrationMultipleTC.EditLead -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [MultipleTC] -->

@@ -1,0 +1,12 @@
+package testcases;
+
+import base.ProjectSpecificMethod;
+
+public class CucumberRunner_TC003 extends ProjectSpecificMethod{
+
+@CucumberOptions(features="src/main/java/features/Login.feature",
+glue="pages",
+publish=true,
+monochrome=true)
+
+}
